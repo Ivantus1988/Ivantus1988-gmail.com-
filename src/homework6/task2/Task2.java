@@ -1,19 +1,21 @@
 package homework6.task2;
 
-import java.util.Arrays;
-
 public class Task2 {
     public static void main(String[] args) {
-        int[][] array = new int[9][9];
-        for (int i = 0; i < array.length; i++) {
-            for (int a = 0; a < array.length; a++) {
-                array[i][a] = (i + 1) * (a + 1);
-                System.out.print(array[i][a] + "\t");
+        int a = 1;
+        int b;
+        while (a != 10) {
+            for (int i = 1; i < 10; i++) {
+                b = a * i;
+                if (b == 1) System.out.print("    ");
+                else {System.out.print(b + "\t");}
             }
             System.out.println();
-        }
+            a++;
+            }
         }
     }
+
 
 
 
