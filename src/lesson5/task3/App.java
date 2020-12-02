@@ -6,6 +6,8 @@ public class App {
         Order order2 = new Order("work", 100, 100);
         Order order3 = new Order("street", 5, 10);
 
+        int sum=0;
+
         int [] order = new int[3];
 
         order[0]  = order1.getPrice();
@@ -24,6 +26,10 @@ public class App {
             else if(kolvo[i]<25)
                 order[i]=(int)(order[i]*0.9);
             else order[i]=(int)(order[i]*0.8);
-            System.out.print(order[i] + "   ");}
+            sum += order[i];
+            System.out.print(order[i] + "   ");
+           }
+        System.out.println();
+        System.out.println("Общая сумма заказов равна:" + sum + ".");
         }
     }

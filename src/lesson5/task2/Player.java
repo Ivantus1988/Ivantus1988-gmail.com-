@@ -8,6 +8,8 @@ public class Player {
         this.x = x;
         this.y = y;
     }
+
+
     public double distance(){
         return Math.sqrt(x*x+y*y);
     }

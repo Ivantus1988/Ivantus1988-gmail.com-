@@ -7,7 +7,7 @@ public class App {
         double tempDiff = 5;
         int [] arrayDays = new int[days];
         Method method = new Method();
-        int result = method.arrayDays(days);
+        int result = method.arrayDays(days,  startTemp,  tempDiff);
         System.out.print(result);
 
     }

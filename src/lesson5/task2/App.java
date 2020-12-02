@@ -1,6 +1,8 @@
 package lesson5.task2;
 import lesson5.task2.Player;
 
+import java.util.Scanner;
+
 public class    App {
     public static void main(String[] args) {
 
